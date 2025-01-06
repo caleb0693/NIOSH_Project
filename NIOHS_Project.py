@@ -83,7 +83,7 @@ if st.button("Play for Animation"):
         sm = plt.cm.ScalarMappable(cmap="plasma", norm=Normalize(vmin=global_min, vmax=global_max))
         sm.set_array([])
         cbar = fig.colorbar(sm, ax=ax, orientation='vertical', fraction=0.046, pad=0.04)
-        cbar.set_label('Sensor Value', fontsize=12)
+        cbar.set_label('Concentration', fontsize=12)
 
         animation_placeholder.pyplot(fig)
         time.sleep(0.5)
