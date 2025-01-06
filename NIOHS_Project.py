@@ -75,7 +75,7 @@ if st.button("Play for Animation"):
 
             ax.scatter(x, y, c=[value], cmap="plasma", norm=Normalize(vmin=global_min, vmax=global_max), s=circle_size, edgecolors="black")
 
-            ax.text(x + 40, y, f"{value:.1f}", color="black", ha="left", va="center", fontsize=8)
+            ax.text(x + 60, y, f"{value:.1f}", color="black", ha="left", va="center", fontsize=8)
 
         ax.axis('off')
         ax.set_title(f"Sensor Data - {current_time}")
